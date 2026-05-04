@@ -139,3 +139,14 @@ a:hover {
         font-size: 1.3rem;
     }
 }
+
+a {
+    color: #FF8C42;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFB347;
+    text-decoration: underline;
+}
