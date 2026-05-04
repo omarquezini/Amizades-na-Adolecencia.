@@ -92,12 +92,11 @@
             E-mail: julho.Santos@gmail.com.br <br>
         </p>
     </footer>
-    
-    <script>
-  // Seleciona todas as imagens do site
-  const imagens = document.querySelectorAll('img');
 
-  // Lista de mensagens motivacionais
+<script>
+  const imagens = document.querySelectorAll('img');
+  const toast = document.getElementById('toast');
+
   const mensagens = [
     "Você é capaz de coisas incríveis!",
     "Acredite em si mesmo e siga em frente!",
@@ -106,16 +105,25 @@
     "Coragem é agir apesar do medo!"
   ];
 
-  // Adiciona evento de clique em cada imagem
   imagens.forEach((img) => {
     img.addEventListener('click', () => {
-      // Escolhe uma mensagem aleatória
+      // Escolhe mensagem aleatória
       const mensagem = mensagens[Math.floor(Math.random() * mensagens.length)];
-      alert(mensagem); // Mostra a mensagem em um pop-up
+      // Mostra a mensagem no toast
+      toast.textContent = mensagem;
+      toast.classList.add('show');
+
+      // Remove o toast depois de 3 segundos
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
     });
   });
 </script>
 
+    
+<!-- Toast (mensagem flutuante) -->
+<div id="toast" class="toast"></div>
 
 </body>
 
