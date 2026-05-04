@@ -93,37 +93,7 @@
         </p>
     </footer>
 
-<script>
-  const imagens = document.querySelectorAll('img');
-  const toast = document.getElementById('toast');
 
-  const mensagens = [
-    "Você é capaz de coisas incríveis!",
-    "Acredite em si mesmo e siga em frente!",
-    "Cada dia é uma nova oportunidade!",
-    "Seja a melhor versão de você hoje!",
-    "Coragem é agir apesar do medo!"
-  ];
-
-  imagens.forEach((img) => {
-    img.addEventListener('click', () => {
-      // Escolhe mensagem aleatória
-      const mensagem = mensagens[Math.floor(Math.random() * mensagens.length)];
-      // Mostra a mensagem no toast
-      toast.textContent = mensagem;
-      toast.classList.add('show');
-
-      // Remove o toast depois de 3 segundos
-      setTimeout(() => {
-        toast.classList.remove('show');
-      }, 3000);
-    });
-  });
-</script>
-
-    
-<!-- Toast (mensagem flutuante) -->
-<div id="toast" class="toast"></div>
 
 </body>
 
