@@ -7,7 +7,7 @@
     <title>Amizades na Adolecência</title>
 
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
@@ -92,6 +92,29 @@
             E-mail: julho.Santos@gmail.com.br <br>
         </p>
     </footer>
+    
+    <script>
+  // Seleciona todas as imagens do site
+  const imagens = document.querySelectorAll('img');
+
+  // Lista de mensagens motivacionais
+  const mensagens = [
+    "Você é capaz de coisas incríveis!",
+    "Acredite em si mesmo e siga em frente!",
+    "Cada dia é uma nova oportunidade!",
+    "Seja a melhor versão de você hoje!",
+    "Coragem é agir apesar do medo!"
+  ];
+
+  // Adiciona evento de clique em cada imagem
+  imagens.forEach((img) => {
+    img.addEventListener('click', () => {
+      // Escolhe uma mensagem aleatória
+      const mensagem = mensagens[Math.floor(Math.random() * mensagens.length)];
+      alert(mensagem); // Mostra a mensagem em um pop-up
+    });
+  });
+</script>
 
 
 </body>
