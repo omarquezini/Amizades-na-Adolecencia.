@@ -150,3 +150,7 @@ a:hover {
     color: #FFB347;
     text-decoration: underline;
 }
+
+.p {
+    text-indent: 2em; /* Isso dá o recuo perfeito no início */
+}
