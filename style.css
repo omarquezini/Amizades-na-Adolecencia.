@@ -66,13 +66,13 @@ h3 {
 ul {
     margin-left: 20px;
     margin-bottom: 20px;
+    list-style: none;
 }
 
 li {
     margin-bottom: 10px;
     padding-left: 10px;
     position: relative;
-    text-decoration: none;
 }
 
 li::before {
